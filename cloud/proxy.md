@@ -24,7 +24,7 @@ function regExpMatch(url, pattern) {
 ```
 
 ### ダイナミックポートフォワーディング(-D)オプション付きでSSH
-```socks.sh
+```:socks.sh
 if [ $# -ne 1 ]; then
   echo "Usage: socks.sh <hostname>"
   exit 1
@@ -35,6 +35,6 @@ ssh -i ykono-sase-tokyo.pem -CND 8157 centos@$1
 ```
 
 ### オプション付きでブラウザ起動
-```proxy.sh
+```:proxy.sh
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --user-data-dir="$HOME/chrome-with-proxy" --proxy-server="socks5://localhost:8157"
 ```
