@@ -11,6 +11,10 @@ A Secure HDFS Client Example
 
 https://community.hortonworks.com/articles/56702/a-secure-hdfs-client-example.html
 
+https://tools.ietf.org/html/rfc5653
+
+---
+
 Javaのセキュリティに詳しいかたでご存知の方がいらっしゃれば教えていただきたいんですが、
 JavaからKerberosに接続する際、javax.security.auth.useSubjectCredsOnlyプロパティをfalseにする必要がある？
 [1] https://community.hortonworks.com/articles/56702/a-secure-hdfs-client-example.html
