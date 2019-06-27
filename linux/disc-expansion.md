@@ -23,7 +23,7 @@ df -h
 
 上記はいずれも、直接解決には繋がらなかったが、参考情報として記録する。
 
-## rewrite_root_disk_partition_table.sh 抜粋
+## rewrite_root_disk_partition_table.sh 引用
 
 VIRTUALIZATION_TYPEは、事前設定が必要（パブリック・クラウドが設定）？
 結果的には、事前のステップなどはなしで、ボリューム拡大確認の実績あり。
