@@ -1,3 +1,16 @@
+## XGBoost on Spark
+
+この場合、C対応Condaライブラリーの配布が必要か？
+
+Python: XGBoost を使ってみる
+
+https://blog.amedama.jp/entry/2019/01/29/235642
+
+
+
+
+## XGBoost on Spark
+
 ### maropu/xgboost-on-spark
 
 https://gist.github.com/maropu/33794b293ee937e99b8fb0788843fa3f
