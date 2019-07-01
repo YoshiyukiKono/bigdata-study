@@ -11,3 +11,9 @@ https://medium.com/paper-readings/learning-about-the-druid-architecture-d033e120
 DruidをBigQueryの代わりに使えないか試してみた
 
 https://adtech.cyberagent.io/techblog/archives/4095
+
+# Supersets Link
+
+http://blog.web.nifty.com/engineer/893
+
+
