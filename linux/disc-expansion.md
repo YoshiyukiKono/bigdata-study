@@ -25,7 +25,8 @@ df -h
 
 ## rewrite_root_disk_partition_table.sh 引用
 
-VIRTUALIZATION_TYPEは、事前設定が必要（パブリック・クラウドが設定）？
+VIRTUALIZATION_TYPEは、事前設定が必要に見えるが？（パブリック・クラウドが設定？）
+
 結果的には、事前のステップなどはなしで、ボリューム拡大確認の実績あり。
 ```
 #!/bin/sh
