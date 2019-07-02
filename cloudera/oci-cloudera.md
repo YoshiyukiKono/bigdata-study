@@ -1,5 +1,9 @@
 # OCI & Cloudera
 
+Cloudera Enterprise Data Hub on Oracle Cloud Infrastructure
+
+https://cloud.oracle.com/en_US/iaas/cloudera
+
 Cloudera Enterprise Data Hub now Validated on Oracle Cloud Infrastructure
 
 https://blogs.oracle.com/cloud-infrastructure/cloudera-enterprise-data-hub-now-validated-on-oracle-cloud-infrastructure
@@ -13,6 +17,14 @@ https://github.com/oracle/oci-quickstart-cloudera
 Cloudera Enterprise Data Hub Reference Architecture for Oracle Cloud Infrastructure Deployments
 
 https://cloud.oracle.com/iaas/whitepapers/cloudera_reference_arch_oci.pdf
+
+Cloudera Quickstart Tutorial
+
+https://oci.qloudable.com/demoLab/public-preview/5aca74fe-8615-4699-8b0a-32595a19cee7
+
+Learn More
+
+https://cloud.oracle.com/iaas/cloudera
 
 ## Cloudera Documentation
 
