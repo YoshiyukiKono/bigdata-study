@@ -68,6 +68,12 @@ https://qiita.com/rysk92/items/e10f898abdc701e09e38
 * 上記のエラーに対応しようとして、`docker-machine start default`を試し、`default`が存在しない、というエラーが表示された。
 * そこで、`docker-machine create --driver virtualbox default`など、試したが、結局上記のユーザ設定が功を奏した。
 
+### Docker Update
+
+```
+curl -L https://github.com/docker/compose/releases/download/1.18.0-rc2/docker-compose-`uname -s-uname -m` -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+```
 ### 参考資料
 
 Get started with Docker Machine and a local VM
