@@ -105,3 +105,23 @@ superset runserver -d
 http://<host>:8088
 
 ログイン成功
+
+## Druidとの接続
+
+Menu > Sources > Druid Clusters > Click "+"
+
+* Cordinator Host: 127.0.0.1
+* Broker Host: 127.0.0.1
+
+以下は、単なる名称で、接続可否に影響しないと思われる。適当に決めたが、接続成功。
+* Verbose name: druid
+* Cluster: druid
+
+* Cache Timeout: 60
+
+上記以外（Port, Endpoint）はデフォルト値を使用
+
+Menu > Sources > Reflesh Druid Metadata
+
+Druidで作成しておいた"wikipedia" データソースが表示された。
+
