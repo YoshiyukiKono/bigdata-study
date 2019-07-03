@@ -69,7 +69,7 @@ superset init
 superset runserver -d
 ```
 
-http://<host>:8088
+http://\<host\>:8088
 
 Error:
 sqlalchemy.exc.OperationalError
@@ -102,7 +102,7 @@ superset init
 superset runserver -d
 ```
 
-http://<host>:8088
+http://\<host\>:8088
 
 ログイン成功
 
