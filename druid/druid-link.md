@@ -14,3 +14,19 @@ Building a dashboard
 
 https://docs.hortonworks.com/HDPDocuments/HDP3/HDP-3.0.1/adding-druid/content/druid_superset_dashboard.html
 
+## HORTONWORKS Tutorial
+
+CDA > DATA ENGINEERS & SCIENTISTS > DATA SCIENCE APPLICATIONS
+
+Superset in Trucking IoT
+
+Superset Concepts
+
+https://jp.hortonworks.com/tutorial/superset-in-trucking-iot/section/1/
+
+## Obsolate?
+
+https://www.linkedin.com/pulse/druid-part-2-neeraj-sabharwal/
+
+https://github.com/Banno/druid-docker
+
