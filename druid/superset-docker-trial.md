@@ -1,4 +1,4 @@
-# Supersetトライアル
+# Superset Docker トライアル
 
 下記を参考にDockerで環境を作成する。
 
