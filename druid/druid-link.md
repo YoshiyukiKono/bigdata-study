@@ -24,6 +24,20 @@ Superset Concepts
 
 https://jp.hortonworks.com/tutorial/superset-in-trucking-iot/section/1/
 
+## Druid and Hive
+
+Druid and Hive Together : Use Cases and Best Practices
+
+https://www.slideshare.net/Hadoop_Summit/druid-and-hive-together-use-cases-and-best-practices
+
+Ultra-fast OLAP Analytics with Apache Hive and Druid – Part 1 of 3
+
+https://hortonworks.com/blog/apache-hive-druid-part-1-3/
+
+Hive/Druid resources cheatsheet, etc
+
+https://drive.google.com/drive/u/1/folders/1IYgea8gcRmgJiGM1DbdLT4Pz9QPhZ2Bg
+
 ## Obsolate?
 
 https://www.linkedin.com/pulse/druid-part-2-neeraj-sabharwal/
