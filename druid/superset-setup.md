@@ -125,3 +125,10 @@ Menu > Sources > Refresh Druid Metadata
 
 Druidで作成しておいた"wikipedia" データソースが表示された。
 
+## Memo
+途中下記のエラーに遭遇したため、python(2)とpython3を併用する形に改めた。(Supersetのドキュメントでも、コマンド名称は"python3"）。一旦venvに入ってしまえば、OSのPython(2)は使われない理解
+
+「Python3系にするとyumが使えなくなる」
+
+https://www.logw.jp/cloudserver/8702.html
+
