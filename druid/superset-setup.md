@@ -121,7 +121,7 @@ Menu > Sources > Druid Clusters > Click "+"
 
 上記以外（Port, Endpoint）はデフォルト値を使用
 
-Menu > Sources > Reflesh Druid Metadata
+Menu > Sources > Refresh Druid Metadata
 
 Druidで作成しておいた"wikipedia" データソースが表示された。
 
