@@ -33,6 +33,10 @@ Learn More
 
 https://cloud.oracle.com/iaas/cloudera
 
+10分で理解するTerraform
+
+https://qiita.com/Chanmoro/items/55bf0da3aaf37dc26f73
+
 ## Cloudera Documentation
 
 Generic Cloud Deployments
