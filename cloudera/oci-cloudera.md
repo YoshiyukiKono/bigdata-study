@@ -29,6 +29,10 @@ Cloudera Quickstart Tutorial
 
 https://oci.qloudable.com/demoLab/public-preview/5aca74fe-8615-4699-8b0a-32595a19cee7
 
+Amazon S3互換性API
+
+https://docs.oracle.com/cd/E97706_01/Content/Object/Tasks/s3compatibleapi.htm
+
 Learn More
 
 https://cloud.oracle.com/iaas/cloudera
