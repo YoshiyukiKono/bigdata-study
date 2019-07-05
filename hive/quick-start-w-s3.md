@@ -30,3 +30,9 @@ row format delimited fields terminated by ',' lines terminated by '\n'
  
 select * from airports_s3;
 ```
+
+## Other References
+
+Airportsデータ利用例
+
+https://github.com/chezou/cloudera-sparklyr
