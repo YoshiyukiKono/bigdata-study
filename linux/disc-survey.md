@@ -22,3 +22,4 @@ $ sudo du -h /var --max-depth 1
 0	/var/www
 33G	/var
 ```
+nifi-bootstrap_2019-07-10.log
