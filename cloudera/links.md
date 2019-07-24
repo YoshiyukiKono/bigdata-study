@@ -8,3 +8,11 @@ https://www.cloudera.com/legal/commercial-terms-and-conditions/support-terms-and
 Pre Requirement Check
 
 https://github.com/cloudera-ps/prereq-checks
+
+# Troubleshoot
+
+https://www.slideshare.net/Cloudera_jp/cwt2016-cloudera-manager-hadoop
+
+https://www.slideshare.net/Cloudera_jp/troubleshooting-using-cloudera-manager-cwt2015
+
+
