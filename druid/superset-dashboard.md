@@ -91,4 +91,10 @@ https://stackoverflow.com/questions/55073406/can-superset-support-real-time-dash
 
 ## Reference
 
+Apache Kafka + Druidを使ってインタラクティブに時系列データを集計処理してみた
+
 https://laclefyoshi.hatenablog.com/entry/20141221/1419164493
+
+Apache Superset-Building Dashboard-Chart 10-Time Series Line Chart-Variation 2
+
+https://www.youtube.com/watch?v=5CBDE5cWwPw
