@@ -1,4 +1,24 @@
 # Sensor Data
+
+## 実行準備
+
+### Druid
+```
+cd apache-druid-0.15.0-incubating
+./bin/start-micro-quickstart 
+```
+### Kafka
+```
+cd kafka_2.12-2.1.0
+./bin/kafka-server-start.sh config/server.properties
+```
+### Superset
+```
+$ python3 -m venv venv
+$ . venv/bin/activate
+(venv) [centos@ip-10-0-0-53 ~]$ superset runserver -d
+```
+
 ## Spec
 https://viewse.blogspot.com/2019/06/minifinifihdfshive_5.html
 
