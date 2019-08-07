@@ -8,7 +8,8 @@ https://viewse.blogspot.com/2019/06/minifinifihdfshive_5.html
 
 1,2019-06-04,23:59:51,1011.54,24.86,50.67
 
-Pythonスクリプト
+## Data
+Python Script
 ```
 #coding: utf-8
 #import bme280_custom
@@ -28,6 +29,7 @@ sensor_data = "1011.54,24.86,50.67"
 f.write(id+","+now+","+now_ymd +","+now_hms+","+sensor_data+"\n")
 f.close()
 ```
+## Kafka Topic
 
 ## Supervisor Spec
 ```
@@ -45,9 +47,9 @@ f.close()
         },
         "dimensionsSpec": {
           "dimensions": ["id","date","time",
-          { name" = : "atmosphere", "type" : "long" },
-          { name" = : "temperature", "type" : "long" },
-          { name" = : "humidity", "type" : "long" } ]
+          { "name" : "atmosphere", "type" : "long" },
+          { "name" : "temperature", "type" : "long" },
+          { "name" : "humidity", "type" : "long" } ]
         },
         "columns": [
           "id",
@@ -56,8 +58,8 @@ f.close()
           "time",
           "atmosphere",
           "temperature",
-          "humidity" ]
-        }
+          "humidity"
+        ]
       }
     },
     "metricsSpec": [],
@@ -69,7 +71,7 @@ f.close()
   },
   "tuningConfig": {
     "type": "kafka",
-    "maxRowsPerSegment": false
+    "maxRowsPerSegment": 5000000
   },
   "ioConfig": {
     "topic": "sensor",
