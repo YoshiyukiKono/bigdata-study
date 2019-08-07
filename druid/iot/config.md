@@ -16,18 +16,13 @@ Python Script
 import datetime
 import os
 
-#dir_path = '/home/pi/bme280-data’
 id = "1"
 now = datetime.datetime.now()
-now_ymd = now.strftime('%Y-%m-%d’)
-now_hms = now.strftime('%H:%M:%S’)
-#sensor_data = bme280_custom.readData()
+timestamp = now.strftime('%Y-%m-%d %H:%M:%S')
+now_ymd = now.strftime('%Y-%m-%d')
+now_hms = now.strftime('%H:%M:%S')
 sensor_data = "1011.54,24.86,50.67"
-#if not os.path.exists('/home/pi/bme280-data’):
-#　　os.makedirs('/home/pi/bme280-data’)
-#f = open('/home/pi/bme280-data/'+filename+'.csv','a’)
-f.write(id+","+now+","+now_ymd +","+now_hms+","+sensor_data+"\n")
-f.close()
+print(id+","+timestamp+","+now_ymd +","+now_hms+","+sensor_data)
 ```
 ## Kafka Topic
 
