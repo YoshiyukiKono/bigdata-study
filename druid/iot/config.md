@@ -31,6 +31,19 @@ f.close()
 ```
 ## Kafka Topic
 
+```
+./bin/kafka-server-start.sh config/server.properties
+
+./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic sensor
+
+```
+
+## Kafka Producer
+
+```
+./kafka_2.12-2.1.0/bin/kafka-console-producer.sh  --broker-list localhost:9092 --topic sensor < sensor.txt
+```
+
 ## Supervisor Spec
 ```
 {
