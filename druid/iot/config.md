@@ -7,6 +7,9 @@
 cd apache-druid-0.15.0-incubating
 ./bin/start-micro-quickstart 
 ```
+
+navigate to http://<host>:8888
+
 ### Kafka
 ```
 cd kafka_2.12-2.1.0
@@ -18,6 +21,8 @@ $ python3 -m venv venv
 $ . venv/bin/activate
 (venv) [centos@ip-10-0-0-53 ~]$ superset runserver -d
 ```
+navigate to http://<host>:8088
+admin/admin
 
 ## Spec
 https://viewse.blogspot.com/2019/06/minifinifihdfshive_5.html
