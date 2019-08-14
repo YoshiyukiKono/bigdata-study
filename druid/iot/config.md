@@ -48,6 +48,11 @@ now_hms = now.strftime('%H:%M:%S')
 sensor_data = "1011.54,24.86,50.67"
 print(id+","+timestamp+","+now_ymd +","+now_hms+","+sensor_data)
 ```
+
+```
+./gen_sensor.py >> sensor.txt 
+```
+
 ## Kafka Topic
 
 ```
@@ -62,7 +67,9 @@ print(id+","+timestamp+","+now_ymd +","+now_hms+","+sensor_data)
 ```
 ./kafka_2.12-2.1.0/bin/kafka-console-producer.sh  --broker-list localhost:9092 --topic sensor < sensor.txt
 ```
-
+```
+python gen_sensor.py | ./kafka_2.12-2.1.0/bin/kafka-console-producer.sh  --broker-list localhost:9092 --topic sensor
+```
 ## Supervisor Spec
 ```
 {
