@@ -53,6 +53,42 @@ print(id+","+timestamp+","+now_ymd +","+now_hms+","+sensor_data)
 ./gen_sensor.py >> sensor.txt 
 ```
 
+emu_sensor.py
+```
+
+```
+```
+import datetime
+import os
+import time
+from kafka import KafkaProducer
+
+producer = KafkaProducer(bootstrap_servers=['localhost:9092'],
+                         value_serializer=lambda x:
+                         x.encode('utf-8'))
+                         #dumps(x).encode('utf-8'))
+                         #msgpack.dumps(x).encode('utf-8'))
+while(True):
+        id = "1"
+        now = datetime.datetime.now()
+        timestamp = now.strftime('%Y-%m-%d %H:%M:%S')
+        now_ymd = now.strftime('%Y-%m-%d')
+        now_hms = now.strftime('%H:%M:%S')
+        sensor_data = "2,2,3"
+        #sensor_data = "1011.54,24.86,50.67"
+        pushed_data = id+","+timestamp+","+now_ymd +","+now_hms+","+sensor_data
+        print(pushed_data)
+        producer.send('sensor', value=pushed_data)
+        time.sleep(1)
+```
+
+```
+[centos@ip-10-0-0-53 ~]$ python3 -m venv sensor
+[centos@ip-10-0-0-53 ~]$ . sensor/bin/activate
+(sensor) [centos@ip-10-0-0-53 ~]$ pip install kafka-python
+(sensor) [centos@ip-10-0-0-53 ~]$ python emu_sensor.py
+```
+
 ## Kafka Topic
 
 ```
