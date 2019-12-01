@@ -4,7 +4,10 @@
 
 34. How to launch & exit spark shell? 
 
-Scala:  To Start: spark-shell  During this process, observe the log. It displays Spark, Scala & Hive versions available in the cluster  To Exit:  exit  
+Scala:  
+
+- To Start: spark-shell  During this process, observe the log. It displays Spark, Scala & Hive versions available in the cluster  
+- To Exit:  exit  
 
 35. What is an RDD & how to create an RDD? 
 
