@@ -28,7 +28,8 @@ val rddJSONFile = spark.read.json("data.json").rdd
 ```
 From Existing RDD through Transformation (Count, Filter, Map, Distinct etc.):  
 ```
-import org.apache.spark.sql.SparkSession  val words = spark.sparkContext.parallelize(Seq("the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog")) 
+import org.apache.spark.sql.SparkSession  
+val words = spark.sparkContext.parallelize(Seq("the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog")) 
 val wordPair = words.map(w => (w.charAt(0), w)) wordPair.foreach(println) 
 ```
 36. Detailed explanation of all elements of “Programming with Spark”, with wordcount & word count variants. 
@@ -46,7 +47,8 @@ val name = sc.textFile("spark1/EmployeeName.csv")
 val namePairRDD = name.map(x=> (x.split(",")(O),x.split(",")(1))) 
 val salary = sc.textFile("spark1/EmployeeSalary.csv") 
 val salaryPairRDD = salary.map(x=> (x.split(",")(O),x.split(",")(1))) 
-val joined = namePairRDD.join(salaryPairRDD).join(managerPairRDD)                                                             joined.collect() 
+val joined = namePairRDD.join(salaryPairRDD).join(managerPairRDD)                                                         
+joined.collect() 
 ```
 38. How to apply filter & remove headers? 
 ```
