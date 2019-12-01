@@ -22,7 +22,7 @@
 - combineByKey
 - aggregateByKey
 
-```
+```python
 ordersKeyValue = orders.map(lambda line: (int(line.split(",")[0], line))
 
 orderItemsKeyValue = orderItems.map(lambda line: (int(line.split(",")[1], line))
@@ -38,7 +38,7 @@ joinedData = orderItemsKeyValue.join(ordersKeyValue)
 
 ## Join
 
-```
+```python
 ordersKeyValue = orders.map(lambda line: (int(line.split(",")[0], line))
 
 orderItemsKeyValue = orderItems.map(lambda line: (int(line.split(",")[1], line))
@@ -63,7 +63,7 @@ perDateMaxAmountCollectedByCustomer = revenuePerDatePerCustomer.reduceByKey(lamb
 
 ## Sort
 
-```
+```python
 # sort in ascending order
 sortedPriceProducts = nonempty_lines.map(lambda line: (float(line.split(",")[4]),(line.split(",")[2])).sortByKey()
 for line in sortedPriceProducts.collect():
