@@ -96,7 +96,7 @@ sortedPriceProducts = nonempty_lines.map(lambda line: (float(line.split(",")[4])
 
 Data: product_id, product_category_id, product_name, product_description, product_price, product_image
 
-```
+```python
 productsRDD = sc.textFile("...")
 nonempty_lines = producstRDD.filter(lambda x: len(x.split(",")[4]) > 0)
 mappedRDD = nonempty_lines.map(lambda line: (line.split(",")[1],(line.split(",")[0],line.split(",")[2],line.split(",")[4]))))
