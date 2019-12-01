@@ -1,6 +1,6 @@
 # Spark
 
-Spark - RDDs & DataFrames: 
+## Spark - RDDs & DataFrames: 
 
 34. How to launch & exit spark shell? 
 
@@ -69,41 +69,41 @@ filtered.collect()
 ```
 
 40. How to save data to single file/multiple files & give specific naming pattern
-
+```
 filtered.foreach{ case(k, rdd) => rdd.saveAsTextFile("spark5/Employee"+k) }
-
+```
 41. How to save result in various file formats & specific delimiters?
-
+```
 filtered.map { x => x.productIterator.mkString("\t") }.saveAsText("path-to-store")
-
+```
 42. How to filter data using regular expression & save different data, differently?
 
 43. How to save the data of an RDD by using specific compresssion technique
-
+```
 import org.apache.hadoop.io.compress.GzipCodec
 dataRDD.saveAsTextFile("", classOf[GZipCodec])
-
+```
 44. How to sort the data before saving it to HDFS
-
+```
 val joinedData = joined.sortByKey()
 joinedData.collect()
-
+```
 45. How to do groupBy & Aggregation of data?
 
 46. What is a DataFrame & how to create a DataFrame?
 
 47. How to register a DataFrame as a table?
-
+```
 auctionsDF.registerTempTable("auctionsDF")
-
+```
 48. How to apply various operations on a DataFrame?
 
 49. How to apply aggregation on a particular column?
 
 50. How to compute statistics on a specific column?
-
+```
 xboxes.describe("price").show
-
+```
 51. How to name the columns of a file?
 
 52. What are pairRDDs and how to create them?
@@ -117,15 +117,51 @@ Aggregations: reduceByKey(), foldByKey(), combineByKey(), countByKey()
 55. What is a partitioner & apply various functions to deal with partitioner?
 
 56. How to create functions & use them in Spark?
-
+```
 case class Person(id: Int) defined class Person
-
+```
 ...
 
 57. How to apply loops on DataFrame?
-``
+```
 for i, s in df.iterrows():
   print(s)
-``
+```
 
+58. How to handle NULLs in Spark?
+
+59. How to process json data in Spark?
+```
+import json
+parsed = json.loads(json_text)
+df = spark.createDataFrame(parsed)
+```
+
+```
+df = sc.wholeTextFile('/tmp/*.json').flatMap(lambda x: json.loads(x[1])).toDF()
+```
+
+60. Table: List of transformations, Actions.
+
+## Spark - SQL
+
+61. What is SQLContext and how to creat a SQLContext?
+
+62. How to write a query in SparkSQL?
+
+63. How to create Hive Table in different formats using SPARK SQL?
+
+
+64. How to load data to hive table using SparkSQL?
+
+65. How to query hive table from SparkSQL?
+
+66. How to apply various operations on a hive table from SparkSQL?
+
+67. How to create a UDF and use it in query?
+```
+sqlContext.udf.register("strLen", (s: String) => s.length())
+
+spark.udf.register("myUpper", (input: String) => input.toUpperCase)
+```
 
