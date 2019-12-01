@@ -21,9 +21,15 @@ From External Data sets:
 ```
 import org.apache.spark.sql.SparkSession  
 
-val spark =        \ ​SparkSession.builder.appName("AvgAnsTime").master("local").getOrCreate() 
+val spark = SparkSession.builder.appName("AvgAnsTime").master("local").getOrCreate() 
 val rddTxtFile = spark.read.textFile("data.txt").rdd 
-val rddCSVFile = spark.read.csv("data.csv").rdd val rddJSONFile = spark.read.json("data.json").rdd From Existing RDD through Transformation (Count, Filter, Map, Distinct etc.):  import org.apache.spark.sql.SparkSession  val words = spark.sparkContext.parallelize(Seq("the", "quick", "brown",       ​​​"fox", "jumps", "over", "the", "lazy", "dog")) val wordPair = words.map(w => (w.charAt(0), w)) wordPair.foreach(println) 
+val rddCSVFile = spark.read.csv("data.csv").rdd 
+val rddJSONFile = spark.read.json("data.json").rdd 
+```
+From Existing RDD through Transformation (Count, Filter, Map, Distinct etc.):  
+```
+import org.apache.spark.sql.SparkSession  val words = spark.sparkContext.parallelize(Seq("the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog")) 
+val wordPair = words.map(w => (w.charAt(0), w)) wordPair.foreach(println) 
 ```
 36. Detailed explanation of all elements of “Programming with Spark”, with wordcount & word count variants. 
 ```
@@ -53,6 +59,8 @@ val managerPairRDDFiltered = managerRemovedHeader.filter(x => x("id") "Raj")
 val content = sc.textFile("spark2/Content.txt") //Load the text file 
 val words = content.flatMap(line => line.split(" " )) 
 val remove = sc.textFile("spark2/Remove.txt") //Load the text file 
-val removeRDD= remove.flatMap(x=> x.split(",")).map(word=>word.trim) //Create an array of words val bRemove = sc.broadcast(removeRDD.collect().toList) 
-val filtered = words.filter { case (word) => !bRemove.value.contains(word) } filtered.collect()
+val removeRDD= remove.flatMap(x=> x.split(",")).map(word=>word.trim) //Create an array of words 
+val bRemove = sc.broadcast(removeRDD.collect().toList) 
+val filtered = words.filter { case (word) => !bRemove.value.contains(word) } 
+filtered.collect()
 ```
