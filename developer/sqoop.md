@@ -13,7 +13,7 @@ $ sqoop import --connect jdbc:mysql://<hostname>(:3306)/<dbname> --table <tablen
 - Format: text
 - Separater: comma
 
-## Generic
+## Help
 ```
 $ sqoop help import
 usage: sqoop import [GENERIC-ARGS] [TOOL-ARGS]
