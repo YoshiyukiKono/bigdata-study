@@ -26,3 +26,10 @@ Found 2 items
 drwx-wx-wx   - hive   supergroup          0 2020-02-25 11:52 /tmp
 drwxrwx--x   - mapred supergroup          0 2020-02-25 11:52 /user
 ```
+## Review your changes and click Continue. The wizard finishes by performing any actions necessary to add the new role instances. Do not start the new roles at this point. You must run the Prepare Node command as described in the next steps before the roles are started.
+
+```
+[conntrack-tools.x86_64] are not installed. Please run prepare node step
+```
+
+https://docs.cloudera.com/documentation/data-science-workbench/1-6-x/topics/cdsw_manage_hosts.html
