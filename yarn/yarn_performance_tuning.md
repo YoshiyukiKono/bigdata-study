@@ -17,3 +17,10 @@ https://docs.cloudera.com/documentation/enterprise/6/6.3/topics/cdh_ig_yarn_tuni
 FairScheduler Tuning With assignmultiple and Continuous Scheduling
 
 https://community.cloudera.com/t5/Customer/FairScheduler-Tuning-With-assignmultiple-and-Continuous/ta-p/76442
+
+
+## Test
+
+```
+$ hadoop jar /opt/cloudera/parcels/CDH-.../jars/hadoop-examples.jar pi 50 500
+```
