@@ -22,5 +22,5 @@ https://community.cloudera.com/t5/Customer/FairScheduler-Tuning-With-assignmulti
 ## Test
 
 ```
-$ hadoop jar /opt/cloudera/parcels/CDH-.../jars/hadoop-examples.jar pi 50 500
+$ hadoop jar /opt/cloudera/parcels/CDH-.../jars/hadoop-examples.jar pi 50 50
 ```
