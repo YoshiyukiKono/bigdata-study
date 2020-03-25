@@ -18,6 +18,11 @@ FairScheduler Tuning With assignmultiple and Continuous Scheduling
 
 https://community.cloudera.com/t5/Customer/FairScheduler-Tuning-With-assignmultiple-and-Continuous/ta-p/76442
 
+### Recommendations
+For larger clusters (having greater than 75-100 NodeManagers) seeing continuous workloads, use the following settings:
+
+- Set the property `yarn.scheduler.fair.continuous-scheduling-enabled` to false
+- Set the property `yarn.scheduler.fair.assignmultiple` to true
 
 ## Test
 
