@@ -12,6 +12,18 @@ https://www.youtube.com/watch?v=O2pH6NeAquk
 
 https://docs.cloudera.com/documentation/enterprise/6/6.3/topics/cdh_ig_yarn_tuning.html
 
+## Cloudera Blog
+
+### Untangling Apache Hadoop YARN
+- http://blog.cloudera.com/blog/2015/09/untangling-apache-hadoop-yarn-part-1/
+- http://blog.cloudera.com/blog/2015/10/untangling-apache-hadoop-yarn-part-2/
+- http://blog.cloudera.com/blog/2016/01/untangling-apache-hadoop-yarn-part-3/
+- http://blog.cloudera.com/blog/2016/06/untangling-apache-hadoop-yarn-part-4-fair-scheduler
+-queue-basics/
+- http://blog.cloudera.com/blog/2017/02/untangling-apache-hadoop-yarn-part-5-using-fairsche
+duler-queue-properties/
+- http://blog.cloudera.com/blog/2018/06/yarn-fairscheduler-preemption-deep-dive/
+
 ## Cloudera Community
 
 FairScheduler Tuning With assignmultiple and Continuous Scheduling
