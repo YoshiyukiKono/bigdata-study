@@ -25,6 +25,11 @@ OOMとかFetchエラーが出る場合は分割サイズが大きいのかも、
 spark.default.parallelism
 spark.sql.shuffle.partitions
 
+### Apache Spark Document
+http://mogile.web.fc2.com/spark/spark200/tuning.html
+デフォルトを変更するために設定プロパティspark.default.parallelism を設定してください。一般的に、クラスタ内のCPUコアあたり2-3のタスクがお勧めです。
+
+
 メモリよりディスクが遅いのは自明なのでキャッシュサイズを調整しましょう。
 
 spark.shuffle.file.buffer
@@ -62,6 +67,7 @@ spark.network.timeout
 ```
 spark.serializer=org.apache.spark.serializer.KryoSerializer
 ```
+> Finally, if you don’t register your custom classes, Kryo will still work, but it will have to store the full class name with each object, which is wasteful.
 
 もし、ORCフォーマットのHiveテーブルを読み書きする際は設定しましょう。
 
@@ -73,3 +79,20 @@ spark.sql.orc.char.enabled
 ## その他
 デフォルトだと試行回数が2回なので1回にします。
 spark.yarn.maxAppAttempts
+
+## 設定例
+http://mogile.web.fc2.com/spark/spark200/configuration.html#environment-variables
+
+```
+./bin/spark-submit --name "My app" --master local[4] --conf spark.eventLog.enabled=false
+  --conf "spark.executor.extraJavaOptions=-XX:+PrintGCDetails -XX:+PrintGCTimeStamps" myApp.jar
+```
+
+```
+spark.master            spark://5.6.7.8:7077
+spark.executor.memory   4g
+spark.eventLog.enabled  true
+spark.serializer        org.apache.spark.serializer.KryoSerializer
+```
+
+
