@@ -28,7 +28,7 @@ lsof -p PID | grep ESTABLISHED
 
 たとえば、私の側では、以下の出力があります：
 
-!()[https://xgkfq28377.i.lithium.com/t5/image/serverpage/image-id/25052iECC056ABEB2F425E/image-size/large?v=1.0&px=999]
+![](https://xgkfq28377.i.lithium.com/t5/image/serverpage/image-id/25052iECC056ABEB2F425E/image-size/large?v=1.0&px=999)
 
 上の写真では、「mysql」を含むすべての出力がHiveMetastoreプロセスからHMS DBに作成されています。
 
